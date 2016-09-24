@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>es2015</h1>
+    <script src="./../../../../node_modules/systemjs/dist/system.js"></script>
+    <script>
+        System.config({
+            meta : {
+                format: 'cjf' // tell systemjs, that the module format, it will encounter, is: commonJS
+            }
+        });
+
+        System.import('calculator.js');
+    </script>
+</body>
+</html>

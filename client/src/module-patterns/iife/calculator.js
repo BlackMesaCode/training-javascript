@@ -1,0 +1,1 @@
+// regular iife cant expose itself to other modules
