@@ -1,4 +1,4 @@
-// upon calling a constructor function the following things happen:
+// upon calling a constructor function with the new keyword, the following things happen:
 
 // It creates a new object. The type of this object, is simply object.
 // It sets this new object's internal, inaccessible, [[prototype]] (i.e. __proto__) property to be the constructor function's external, accessible, prototype object (every function object automatically has a prototype property).
@@ -72,29 +72,16 @@ function Car() {
 Car.prototype = new Vehicle();
 Motorcylce.prototype = new Vehicle();
 
+var vehicle1 = new Vehicle(8);
+console.log("vehicle1 of type Vehicle?: " + (vehicle1 instanceof Vehicle));
+
 var car1 = new Car(4);
+console.log("car1 of type Car?: " + (car1 instanceof Car));
+console.log("car1 of type Vehicle?: " + (car1 instanceof Vehicle));
+
 car1.fillTires();
 console.log(car1.base);
 
 
-// extension methods:
-
-String.prototype.calcLength = function() {
-    return this.length;
-}
-
-console.log("hello".calcLength());
-
-
-// reflection
-
-var obj = { name: "Peter", height: 180 }
-for(var prop in obj) {
-    console.log(prop);
-    obj[prop] = "overriden!";
-}
-console.log(obj.name);
-
 var test = 1;
-
 
