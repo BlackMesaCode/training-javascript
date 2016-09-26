@@ -1,0 +1,19 @@
+{
+  "name": "trainingjavascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://BlackMesa@bitbucket.org/BlackMesa/trainingjavascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/BlackMesa/trainingjavascript#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
