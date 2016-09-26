@@ -1,3 +1,5 @@
+"use strict"; // must be declared on top of a file !
+
 // global scope in browser: window.bar
 var bar = "Hello";  // bar gets declared on the global scope: window.bar
 
@@ -34,3 +36,20 @@ var blah = "outer";
 foo2(); // prints "outer"
 
 
+// Let keyword
+
+function lemme() {
+    for (var i=0; i < 3; i++) {
+        console.log("for: " + i);
+    }
+
+    for (var i=0; i < 3; i++) {  // this variable i is already declared, because vars get declared on the function scope ! use let instead for block scoping
+        console.log("for: " + i);
+    }
+
+    for (let i=0; i < 3; i++) {
+        console.log("let: " + i);
+    }
+}
+
+lemme();

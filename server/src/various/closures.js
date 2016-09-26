@@ -5,6 +5,9 @@
 // Das Closure Verhalten ist notwendig um Funktionsreferenzen sinnvoll herumreichen zu können. Würden Sie jedesmall ihren Deklarations-Kontext vergessen, wären Sie nur halb so brauchbar 
 // Die in der Closure definierte Funktion merkt sich die Umgebung, in der sie erzeugt wurde.
 
+// Variables captured with closure are not garbage collected
+
+// Capture keeps the variable references, not the assigned values ! there is NO snapshotting
 
 
 // Example 1
@@ -32,4 +35,3 @@ function sayHello2(name) {
 }
 var say2 = sayHello2('Bob');  // sayHello2 return a function reference to a function declared within sayHello2 - when passing out that function reference, its lexcial context is remembered the moment, we invoke this function reference
 say2(); // logs "Hello Bob"
-

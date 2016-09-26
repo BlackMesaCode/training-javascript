@@ -10,7 +10,7 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "sourceType": "module"
+        "sourceType": "script" // default value - "module" is for es6 modules 
     },
     "rules": {
         "strict": "warn",
