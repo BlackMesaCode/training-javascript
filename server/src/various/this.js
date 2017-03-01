@@ -1,22 +1,23 @@
 // "use strict";
 
-// this is an object whos value is determined by the execution context of the function, "this" is used in
+// this is an object whos value is determined by the execution context of the function where "this" is used in
 // there are four rules that determine the value of this:
 
 
 // 1. new binding 
 function NewBinding() {
-    console.log(this.name);
+    console.log(this.name); // outputs undefined
 }
 
-console.log("binding with new: ")
+console.log("binding with new: ") 
+new NewBinding()
 // this is the value returned by the constructor function (if the constructor function doesnt return a different value). its an empty object, linked to the prototype of the Function, enriched by the command in the constructor function 
 
 
 
 
 // 2. hard binding / explicit binding
-// hardbinding/explicit binding defeats the purpose of the this keywoard - if we just wanted to reference a static context, we were better off just using globally available object, or just pass the needed object to the function
+// hardbinding/explicit binding defeats the purpose of the this keywoard - if we just wanted to reference a static context, we were better off just using a globally available object, or just pass the needed object to the function
 
 console.log("hard/explicit binding: ")
 
