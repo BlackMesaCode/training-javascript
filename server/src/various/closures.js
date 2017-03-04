@@ -1,8 +1,8 @@
 // Closure Definitionen:
 
-// Closure = dt. Verschluss .. d.h. eine Funktionsdeklaration umschließt seine lexialische Umgebung, und wenn diese Funktionsreferenz dann herumgereicht wird, wird immer das ganze, umschlossene Paket herumgereicht.
+// Closure = dt. Verschluss .. d.h. eine Funktionsdeklaration umschließt seine lexikalische Umgebung, und wenn diese Funktionsreferenz dann herumgereicht wird, wird immer das ganze, umschlossene Paket herumgereicht.
 // Closure is when a function "remembers" its lexical scope, even when the function is executed outside that lexical scope
-// Das Closure Verhalten ist notwendig um Funktionsreferenzen sinnvoll herumreichen zu können. Würden Sie jedesmall ihren Deklarations-Kontext vergessen, wären Sie nur halb so brauchbar 
+// Das Closure Verhalten ist notwendig um Funktionsreferenzen sinnvoll herumreichen zu können. Würden Sie jedesmal ihren Deklarations-Kontext vergessen, wären sie wenig brauchbar
 // Die in der Closure definierte Funktion merkt sich die Umgebung, in der sie erzeugt wurde.
 
 // Variables captured with closure are not garbage collected
