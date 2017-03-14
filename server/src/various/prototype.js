@@ -1,6 +1,6 @@
 /// Object creation method 1
 
-function Foo(name) {   // constructor method in camel case by convention
+function Foo(name) {   // constructor method in pascal case by convention (PascalCase  vs  camelCase)
     this.name = name;
 }
 
