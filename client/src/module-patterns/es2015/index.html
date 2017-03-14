@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>es2015</h1>
+    <h1>ES6/ES2015 loaded with systemJS sample</h1>
     <script src="./../../../../node_modules/systemjs/dist/system.js"></script>
     <script>
         System.config({
@@ -14,7 +14,7 @@
             }
         });
 
-        System.import('calculator.js');
+        System.import('calculator.js'); // even though our *.js files are transpiled to es5, we cant load them natively: import/export calls where resolved to the commonJS-Syntax (require()...) and those functions have to be made available though a module loader like systemJS
     </script>
 </body>
 </html>
