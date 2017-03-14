@@ -9,6 +9,10 @@
 import sum, {divide} from "./simpleMath.js"; // thats the only working way! the syntax for importing default exports has to combined with the syntax for importing regular exports
 
 
+// more:  https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/import
+
+
+
 function mult(a, b) {
     return a * b;
 }
