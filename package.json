@@ -16,5 +16,13 @@
   "dependencies": {
     "javascripting": "^2.6.0",
     "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.0",
+    "del": "^2.2.2",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.11",
+    "live-server": "^1.2.0"
   }
 }
